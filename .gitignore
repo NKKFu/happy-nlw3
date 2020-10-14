@@ -9,6 +9,8 @@ node_modules
 /coverage
 
 # production
+*/uploads/*
+!*/uploads/.gitkeep
 /build
 
 # misc
