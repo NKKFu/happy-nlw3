@@ -25,7 +25,7 @@ export const OrphanagesMap: React.FC = () => {
             .then((response) => {
                 setOrphanages(response.data);
             });
-    }, []);
+    });
 
     function handleNavigateToOrphanageDetails(id: number) {
         navigation.navigate('OrphanageDetails', { id });
