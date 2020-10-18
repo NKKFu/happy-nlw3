@@ -43,8 +43,40 @@ export const Container = styled.div`
         }
     }
 
-    .leaflet-container {
-        z-index: 5;
+    .leaflet-container { 
+            z-index: 5;
+        .leaflet-popup-content-wrapper {
+            background: rgba(255,255,255,0.8);
+            border-radius: 20;
+            box-shadow: none;
+        }
+
+        .leaflet-popup-content {
+            color: #0089a5;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 8px 12px;
+
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .leaflet-popup-tip-container {
+            display: none;
+        }
+
+        a {
+            width: 40px;
+            height:40px;
+            background-color: #15c3d6;
+            box-shadow: 17.28px 27.65px 41.48px rgba(23, 142, 166, 0.16);
+            border-radius: 12px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     
     .create-orphanage {
